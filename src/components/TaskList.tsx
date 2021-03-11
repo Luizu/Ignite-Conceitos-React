@@ -38,9 +38,7 @@ export function TaskList() {
       return
     }
 
-    
     findTask.isComplete = !findTask.isComplete
-
 
     setTasks([...tasks])
 
@@ -48,8 +46,6 @@ export function TaskList() {
 
   function handleRemoveTask(id: number) {
     const filteredTasks = tasks.filter(task => task.id !== id)
-
-    console.log(filteredTasks)
 
     setTasks([...filteredTasks])
   }
